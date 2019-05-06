@@ -137,118 +137,122 @@ delOne.onclick = function del_Last() {
 	document.getElementById("res").innerHTML = res_del;
 }
 plus.onclick = function plus() {
-	var num = parseInt(document.getElementById("archive").innerHTML);
+	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	sign = res.slice(0,1);
-	if (length > 1) {
-		var num_second = parseInt(res.slice(1,length));
+	if(num === "Hello"){
+		document.getElementById("archive").innerHTML = res;
 	}else{
-		var num_second = sign;
-	}
-	switch(sign){
-		case '+': 
-			document.getElementById("archive").innerHTML = num+num_second;
-			break;
-		case '-': 
-			document.getElementById("archive").innerHTML = num-num_second;
-			break;
-		case '*': 
-			document.getElementById("archive").innerHTML = num*num_second;
-			break;
-		case '/': 
-			document.getElementById("archive").innerHTML = num/num_second;
-			break;
-		default: 
-			document.getElementById("archive").innerHTML = num_second;
-			break;		
+		var sign = res.slice(0,1);
+		num = parseInt(num);
+		var num_second = parseInt(res.slice(1,length)); 
+		switch(sign){
+			case '+': 
+				document.getElementById("archive").innerHTML = num+num_second;
+				break;
+			case '-': 
+				document.getElementById("archive").innerHTML = num-num_second;
+				break;
+			case '*': 
+				document.getElementById("archive").innerHTML = num*num_second;
+				break;
+			case '/': 
+				document.getElementById("archive").innerHTML = num/num_second;
+				break;
+			default: 
+				document.getElementById("archive").innerHTML = num_second;
+				break;
+		}		
 	}
 	document.getElementById("res").innerHTML = "+";
 }
 minus.onclick = function minus() {
-	var num = parseInt(document.getElementById("archive").innerHTML);
+	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	sign = res.slice(0,1);
-	if (length > 1) {
-		var num_second = parseInt(res.slice(1,length));
+	if(num === "Hello"){
+		document.getElementById("archive").innerHTML = res;
 	}else{
-		var num_second = sign;
-	}
-	switch(sign){
-		case '+': 
-			document.getElementById("archive").innerHTML = num+num_second;
-			break;
-		case '-': 
-			document.getElementById("archive").innerHTML = num-num_second;
-			break;
-		case '*': 
-			document.getElementById("archive").innerHTML = num*num_second;
-			break;
-		case '/': 
-			document.getElementById("archive").innerHTML = num/num_second;
-			break;
-		default: 
-			document.getElementById("archive").innerHTML = num_second;
-			break;		
+		var sign = res.slice(0,1);
+		num = parseInt(num);
+		var num_second = parseInt(res.slice(1,length)); 
+		switch(sign){
+			case '+': 
+				document.getElementById("archive").innerHTML = num+num_second;
+				break;
+			case '-': 
+				document.getElementById("archive").innerHTML = num-num_second;
+				break;
+			case '*': 
+				document.getElementById("archive").innerHTML = num*num_second;
+				break;
+			case '/': 
+				document.getElementById("archive").innerHTML = num/num_second;
+				break;
+			default: 
+				document.getElementById("archive").innerHTML = num_second;
+				break;
+		}		
 	}
 	document.getElementById("res").innerHTML = "-";
 }
 mult.onclick = function mult() {
-	var num = parseInt(document.getElementById("archive").innerHTML);
+	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	sign = res.slice(0,1);
-	if (length > 1) {
-		var num_second = parseInt(res.slice(1,length));
+	if(num === "Hello"){
+		document.getElementById("archive").innerHTML = res;
 	}else{
-		var num_second = sign;
-	}
-	switch(sign){
-		case '+': 
-			document.getElementById("archive").innerHTML = num+num_second;
-			break;
-		case '-': 
-			document.getElementById("archive").innerHTML = num-num_second;
-			break;
-		case '*': 
-			document.getElementById("archive").innerHTML = num*num_second;
-			break;
-		case '/': 
-			document.getElementById("archive").innerHTML = num/num_second;
-			break;
-		default: 
-			document.getElementById("archive").innerHTML = num_second;
-			break;		
+		var sign = res.slice(0,1);
+		num = parseInt(num);
+		var num_second = parseInt(res.slice(1,length)); 
+		switch(sign){
+			case '+': 
+				document.getElementById("archive").innerHTML = num+num_second;
+				break;
+			case '-': 
+				document.getElementById("archive").innerHTML = num-num_second;
+				break;
+			case '*': 
+				document.getElementById("archive").innerHTML = num*num_second;
+				break;
+			case '/': 
+				document.getElementById("archive").innerHTML = num/num_second;
+				break;
+			default: 
+				document.getElementById("archive").innerHTML = num_second;
+				break;
+		}		
 	}
 	document.getElementById("res").innerHTML = "*";
 }
 div.onclick = function div() {
-	var num = parseInt(document.getElementById("archive").innerHTML);
+	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	sign = res.slice(0,1);
-	if (length > 1) {
-		var num_second = parseInt(res.slice(1,length));
+	if(num === "Hello"){
+		document.getElementById("archive").innerHTML = res;
 	}else{
-		var num_second = sign;
-	}
-	switch(sign){
-		case '+': 
-			document.getElementById("archive").innerHTML = num+num_second;
-			break;
-		case '-': 
-			document.getElementById("archive").innerHTML = num-num_second;
-			break;
-		case '*': 
-			document.getElementById("archive").innerHTML = num*num_second;
-			break;
-		case '/': 
-			document.getElementById("archive").innerHTML = num/num_second;
-			break;
-		default: 
-			document.getElementById("archive").innerHTML = num_second;
-			break;			
+		var sign = res.slice(0,1);
+		num = parseInt(num);
+		var num_second = parseInt(res.slice(1,length)); 
+		switch(sign){
+			case '+': 
+				document.getElementById("archive").innerHTML = num+num_second;
+				break;
+			case '-': 
+				document.getElementById("archive").innerHTML = num-num_second;
+				break;
+			case '*': 
+				document.getElementById("archive").innerHTML = num*num_second;
+				break;
+			case '/': 
+				document.getElementById("archive").innerHTML = num/num_second;
+				break;
+			default: 
+				document.getElementById("archive").innerHTML = num_second;
+				break;
+		}		
 	}
 	document.getElementById("res").innerHTML = "/";
 }
