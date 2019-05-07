@@ -128,6 +128,7 @@ point.onclick = function scanPoint() {
 	document.getElementById("res").innerHTML += value;
 }
 C.onclick = function del() {
+	document.getElementById("archive").innerHTML = "Hello"
 	document.getElementById("res").innerHTML = "0"
 }
 delOne.onclick = function del_Last() {
@@ -140,119 +141,170 @@ plus.onclick = function plus() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	if(num === "Hello"){
-		document.getElementById("archive").innerHTML = res;
+	if (res === "") {
+		document.getElementById("res").innerHTML = "+";
 	}else{
-		var sign = res.slice(0,1);
-		num = parseInt(num);
-		var num_second = parseInt(res.slice(1,length)); 
-		switch(sign){
-			case '+': 
-				document.getElementById("archive").innerHTML = num+num_second;
-				break;
-			case '-': 
-				document.getElementById("archive").innerHTML = num-num_second;
-				break;
-			case '*': 
-				document.getElementById("archive").innerHTML = num*num_second;
-				break;
-			case '/': 
-				document.getElementById("archive").innerHTML = num/num_second;
-				break;
-			default: 
-				document.getElementById("archive").innerHTML = num_second;
-				break;
-		}		
+		if(num === "Hello"){
+			document.getElementById("archive").innerHTML = res;
+		}else{
+			var sign = res.slice(0,1);
+			num = parseFloat(num);
+			var num_second = parseFloat(res.slice(1,length)); 
+			switch(sign){
+				case '+': 
+					document.getElementById("archive").innerHTML = num+num_second;
+					break;
+				case '-': 
+					document.getElementById("archive").innerHTML = num-num_second;
+					break;
+				case '*': 
+					document.getElementById("archive").innerHTML = num*num_second;
+					break;
+				case '/': 
+					document.getElementById("archive").innerHTML = num/num_second;
+					break;
+				default: 
+					document.getElementById("archive").innerHTML = num_second;
+					break;
+			}		
+		}
+		document.getElementById("res").innerHTML = "+";
 	}
-	document.getElementById("res").innerHTML = "+";
 }
 minus.onclick = function minus() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	if(num === "Hello"){
-		document.getElementById("archive").innerHTML = res;
+	if (res === "") {
+		document.getElementById("res").innerHTML = "-";
 	}else{
-		var sign = res.slice(0,1);
-		num = parseInt(num);
-		var num_second = parseInt(res.slice(1,length)); 
-		switch(sign){
-			case '+': 
-				document.getElementById("archive").innerHTML = num+num_second;
-				break;
-			case '-': 
-				document.getElementById("archive").innerHTML = num-num_second;
-				break;
-			case '*': 
-				document.getElementById("archive").innerHTML = num*num_second;
-				break;
-			case '/': 
-				document.getElementById("archive").innerHTML = num/num_second;
-				break;
-			default: 
-				document.getElementById("archive").innerHTML = num_second;
-				break;
-		}		
+		if(num === "Hello"){
+			document.getElementById("archive").innerHTML = res;
+		}else{
+			var sign = res.slice(0,1);
+			num = parseFloat(num);
+			var num_second = parseFloat(res.slice(1,length)); 
+			switch(sign){
+				case '+': 
+					document.getElementById("archive").innerHTML = num+num_second;
+					break;
+				case '-': 
+					document.getElementById("archive").innerHTML = num-num_second;
+					break;
+				case '*': 
+					document.getElementById("archive").innerHTML = num*num_second;
+					break;
+				case '/': 
+					document.getElementById("archive").innerHTML = num/num_second;
+					break;
+				default: 
+					document.getElementById("archive").innerHTML = num_second;
+					break;
+			}		
+		}
+		document.getElementById("res").innerHTML = "-";
 	}
-	document.getElementById("res").innerHTML = "-";
 }
 mult.onclick = function mult() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	if(num === "Hello"){
-		document.getElementById("archive").innerHTML = res;
+	if (res === "") {
+		document.getElementById("res").innerHTML = "*";
 	}else{
-		var sign = res.slice(0,1);
-		num = parseInt(num);
-		var num_second = parseInt(res.slice(1,length)); 
-		switch(sign){
-			case '+': 
-				document.getElementById("archive").innerHTML = num+num_second;
-				break;
-			case '-': 
-				document.getElementById("archive").innerHTML = num-num_second;
-				break;
-			case '*': 
-				document.getElementById("archive").innerHTML = num*num_second;
-				break;
-			case '/': 
-				document.getElementById("archive").innerHTML = num/num_second;
-				break;
-			default: 
-				document.getElementById("archive").innerHTML = num_second;
-				break;
-		}		
+		if(num === "Hello"){
+			document.getElementById("archive").innerHTML = res;
+		}else{
+			var sign = res.slice(0,1);
+			num = parseFloat(num);
+			var num_second = parseFloat(res.slice(1,length)); 
+			switch(sign){
+				case '+': 
+					document.getElementById("archive").innerHTML = num+num_second;
+					break;
+				case '-': 
+					document.getElementById("archive").innerHTML = num-num_second;
+					break;
+				case '*': 
+					document.getElementById("archive").innerHTML = num*num_second;
+					break;
+				case '/': 
+					document.getElementById("archive").innerHTML = num/num_second;
+					break;
+				default: 
+					document.getElementById("archive").innerHTML = num_second;
+					break;
+			}		
+		}
+		document.getElementById("res").innerHTML = "*";
 	}
-	document.getElementById("res").innerHTML = "*";
 }
-div.onclick = function div() {
+div.onclick = function plus() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
 	var length = res.length;
-	if(num === "Hello"){
-		document.getElementById("archive").innerHTML = res;
+	if (res === "") {
+		document.getElementById("res").innerHTML = "/";
 	}else{
-		var sign = res.slice(0,1);
-		num = parseInt(num);
-		var num_second = parseInt(res.slice(1,length)); 
-		switch(sign){
-			case '+': 
-				document.getElementById("archive").innerHTML = num+num_second;
-				break;
-			case '-': 
-				document.getElementById("archive").innerHTML = num-num_second;
-				break;
-			case '*': 
-				document.getElementById("archive").innerHTML = num*num_second;
-				break;
-			case '/': 
-				document.getElementById("archive").innerHTML = num/num_second;
-				break;
-			default: 
-				document.getElementById("archive").innerHTML = num_second;
-				break;
-		}		
+		if(num === "Hello"){
+			document.getElementById("archive").innerHTML = res;
+		}else{
+			var sign = res.slice(0,1);
+			num = parseFloat(num);
+			var num_second = parseFloat(res.slice(1,length)); 
+			switch(sign){
+				case '+': 
+					document.getElementById("archive").innerHTML = num+num_second;
+					break;
+				case '-': 
+					document.getElementById("archive").innerHTML = num-num_second;
+					break;
+				case '*': 
+					document.getElementById("archive").innerHTML = num*num_second;
+					break;
+				case '/': 
+					document.getElementById("archive").innerHTML = num/num_second;
+					break;
+				default: 
+					document.getElementById("archive").innerHTML = num_second;
+					break;
+			}		
+		}
+		document.getElementById("res").innerHTML = "/";
 	}
-	document.getElementById("res").innerHTML = "/";
+}
+equ.onclick = function equ() {
+	var num = document.getElementById("archive").innerHTML;
+	var res = document.getElementById("res").innerHTML;
+	var length = res.length;
+	if (res === "") {
+		document.getElementById("res").innerHTML = num;
+		document.getElementById("archive").innerHTML = "Hello"
+	}else{
+		if(num === "Hello"){
+			document.getElementById("archive").innerHTML = res;
+		}else{
+			var sign = res.slice(0,1);
+			num = parseFloat(num);
+			var num_second = parseFloat(res.slice(1,length)); 
+			switch(sign){
+				case '+': 
+					document.getElementById("res").innerHTML = num+num_second;
+					break;
+				case '-': 
+					document.getElementById("res").innerHTML = num-num_second;
+					break;
+				case '*': 
+					document.getElementById("res").innerHTML = num*num_second;
+					break;
+				case '/': 
+					document.getElementById("res").innerHTML = num/num_second;
+					break;
+				default: 
+					document.getElementById("res").innerHTML = num_second;
+					break;
+			}		
+		}
+		document.getElementById("archive").innerHTML = "Hello"
+	}
 }
