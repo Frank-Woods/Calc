@@ -121,6 +121,9 @@ zero.onclick = function scan0() {
 point.onclick = function scanPoint() {
 	var value = document.getElementById("point").innerHTML;
 	var res = document.getElementById("res").innerHTML;
+	if (res.substr(-1) === ".") {
+		fail;
+	}
 	var length = res.length;
 	if (length > 15) {
 		fail;
@@ -140,6 +143,10 @@ delOne.onclick = function del_Last() {
 plus.onclick = function plus() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
+	if (res.substr(-1) === "+"||res.substr(-1) === "-"||res.substr(-1) === "*"||res.substr(-1) === "/") {
+		document.getElementById("res").innerHTML = "+";
+		fail;
+	}
 	var length = res.length;
 	if (res === "") {
 		document.getElementById("res").innerHTML = "+";
@@ -174,6 +181,10 @@ plus.onclick = function plus() {
 minus.onclick = function minus() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
+	if (res.substr(-1) === "+"||res.substr(-1) === "-"||res.substr(-1) === "*"||res.substr(-1) === "/") {
+		document.getElementById("res").innerHTML = "-";
+		fail;
+	}
 	var length = res.length;
 	if (res === "") {
 		document.getElementById("res").innerHTML = "-";
@@ -208,6 +219,10 @@ minus.onclick = function minus() {
 mult.onclick = function mult() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
+	if (res.substr(-1) === "+"||res.substr(-1) === "-"||res.substr(-1) === "*"||res.substr(-1) === "/") {
+		document.getElementById("res").innerHTML = "*";
+		fail;
+	}
 	var length = res.length;
 	if (res === "") {
 		document.getElementById("res").innerHTML = "*";
@@ -242,6 +257,10 @@ mult.onclick = function mult() {
 div.onclick = function plus() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
+	if (res.substr(-1) === "+"||res.substr(-1) === "-"||res.substr(-1) === "*"||res.substr(-1) === "/") {
+		document.getElementById("res").innerHTML = "/";
+		fail;
+	}
 	var length = res.length;
 	if (res === "") {
 		document.getElementById("res").innerHTML = "/";
@@ -276,6 +295,11 @@ div.onclick = function plus() {
 equ.onclick = function equ() {
 	var num = document.getElementById("archive").innerHTML;
 	var res = document.getElementById("res").innerHTML;
+	if (res.substr(-1) === "+"||res.substr(-1) === "-"||res.substr(-1) === "*"||res.substr(-1) === "/") {
+		document.getElementById("res").innerHTML = num;
+		document.getElementById("archive").innerHTML = "Hello"
+		fail;
+	}
 	var length = res.length;
 	if (res === "") {
 		document.getElementById("res").innerHTML = num;
