@@ -53,30 +53,30 @@
 		</tr>
 		<tr>
 			<td><button id="C">C</button></td>
-			<td><button id="delOne"><</button></td>
-			<td><button id="div">/</button></td>
-			<td><button id="mult">*</button></td>
+			<td><button id="delOne">&#8592;</button></td>
+			<td><button id="div" onclick="count('/')">/</button></td>
+			<td><button id="mult" onclick="count('*')">*</button></td>
 		</tr>
 		<tr>
-			<td><button id="Num7">7</button></td>
-			<td><button id="Num8">8</button></td>
-			<td><button id="Num9">9</button></td>
-			<td><button id="plus">+</button></td>
+			<td><button id="Num7" onclick="add(7)">7</button></td>
+			<td><button id="Num8" onclick="add(8)">8</button></td>
+			<td><button id="Num9" onclick="add(9)">9</button></td>
+			<td><button id="plus" onclick="count('+')">+</button></td>
 		</tr>
 		<tr>
-			<td><button id="Num4">4</button></td>
-			<td><button id="Num5">5</button></td>
-			<td><button id="Num6">6</button></td>
-			<td><button id="minus">-</button></td>
+			<td><button id="Num4" onclick="add(4)">4</button></td>
+			<td><button id="Num5" onclick="add(5)">5</button></td>
+			<td><button id="Num6" onclick="add(6)">6</button></td>
+			<td><button id="minus" onclick="count('-')">-</button></td>
 		</tr>
 		<tr>
-			<td><button id="Num1">1</button></td>
-			<td><button id="Num2">2</button></td>
-			<td><button id="Num3">3</button></td>
+			<td><button id="Num1" onclick="add(1)">1</button></td>
+			<td><button id="Num2" onclick="add(2)">2</button></td>
+			<td><button id="Num3" onclick="add(3)">3</button></td>
 			<td rowspan="2"><button id="equ">=</button></td>
 		</tr>
 		<tr>
-			<td colspan="2"><button id="zero">0</button></td>
+			<td colspan="2"><button id="zero" onclick="add(0)">0</button></td>
 			<td><button id="point">.</button></td>
 		</tr>
 	</table>
